@@ -35,7 +35,7 @@ header{
     padding-left: 30px;
     align-items: center;
     gap: 30px;
-    z-index: 1;
+    z-index: 2;
     
 }
 nav > ul{
@@ -49,10 +49,18 @@ nav > ul > li > a {
   color: white;
   text-decoration: none;
 }
-
+nav  ul  li  a:hover {
+  text-decoration: underline;
+  text-decoration-color: #ff145a;
+  text-decoration-thickness: 3px;
+}
+a{
+  text-decoration: none;
+     user-select: none;
+    -webkit-user-drag: none;
+}
 section#mascara{
     grid-area: mascara;
-   
     position: relative;
 }
 img#batman-mask{
@@ -62,6 +70,8 @@ img#batman-mask{
     top: -48px;
     left: 30px;
     z-index: 1;
+       user-select: none;
+    -webkit-user-drag: none;
 }
 section#conteudo{
      grid-area: conteudo;
@@ -69,6 +79,10 @@ section#conteudo{
     flex-direction: column;
     gap: 20px;
   
+}
+#logo{
+     user-select: none;
+    -webkit-user-drag: none;
 }
 h1{
     font-size: 1.5em;
